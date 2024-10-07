@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using System.Threading.Channels;
+using Microsoft.Extensions.DependencyInjection;
 using W6_assignment_template.Data;
 using W6_assignment_template.Services;
 
@@ -6,8 +7,13 @@ namespace W6_assignment_template
 {
     class Program
     {
+        //  this is the Template for Wk 6
+        
+
         static void Main(string[] args)
         {
+
+
             var serviceCollection = new ServiceCollection();
             ConfigureServices(serviceCollection);
 
